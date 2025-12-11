@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 IT - Self Management Skills</title>
+    
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.5;
+            animation: blob 7s infinite;
+        }
+        @keyframes blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <span class="font-bold text-xl bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Class 9 IT</span>
+                </div>
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#meaning" class="text-gray-600 hover:text-purple-600 transition font-medium">Meaning</a>
+                    <a href="#importance" class="text-gray-600 hover:text-purple-600 transition font-medium">Importance</a>
+                    <a href="#stress" class="text-gray-600 hover:text-purple-600 transition font-medium">Stress</a>
+                    <a href="#time" class="text-gray-600 hover:text-purple-600 transition font-medium">Time</a>
+                    <a href="#quiz" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4 py-2 rounded-full font-medium hover:shadow-lg transition">Take Quiz</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+        <div class="blob w-72 h-72 bg-pink-400 top-20 left-10"></div>
+        <div class="blob w-96 h-96 bg-blue-400 bottom-20 right-10" style="animation-delay: -3s;"></div>
+        <div class="max-w-4xl mx-auto text-center px-4 relative z-10 fade-in">
+            <span class="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+                📖 Chapter: Self Management Skills
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Master Your Mind,<br>
+                <span class="text-yellow-300">Master Your Life</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
+                Learn essential self-management skills to boost productivity, reduce stress, and achieve your goals as a student.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#meaning" class="bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 hover:text-purple-800 transition shadow-xl">
+                    Start Learning →
+                </a>
+                <a href="#quiz" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-purple-700 transition">
+                    Take Quiz
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Meaning of Self-Management -->
+    <section id="meaning" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-purple-600 font-semibold text-sm uppercase tracking-wider">Understanding The Basics</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">What is Self-Management?</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-purple-50 to-indigo-50 p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                            <span class="text-3xl">🎯</span> Definition
+                        </h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Self-management is the ability to <strong>regulate your emotions, thoughts, and behaviors</strong> effectively in different situations. It involves managing your time, controlling impulses, and working toward personal and academic goals.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                            <span class="text-3xl">🧠</span> In Simple Words
+                        </h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            It means being your own boss! Taking responsibility for your actions, staying organized, and making good decisions without someone constantly telling you what to do.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-purple-100 p-6 rounded-2xl text-center card-hover">
+                        <span class="text-4xl">⏰</span>
+                        <p class="font-semibold mt-2 text-purple-800">Time Control</p>
+                    </div>
+                    <div class="bg-blue-100 p-6 rounded-2xl text-center card-hover">
+                        <span class="text-4xl">😌</span>
+                        <p class="font-semibold mt-2 text-blue-800">Emotion Regulation</p>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-2xl text-center card-hover">
+                        <span class="text-4xl">🎯</span>
+                        <p class="font-semibold mt-2 text-green-800">Goal Setting</p>
+                    </div>
+                    <div class="bg-yellow-100 p-6 rounded-2xl text-center card-hover">
+                        <span class="text-4xl">💪</span>
+                        <p class="font-semibold mt-2 text-yellow-800">Self-Discipline</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importance of Self-Management -->
+    <section id="importance" class="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-purple-600 font-semibold text-sm uppercase tracking-wider">Why It Matters</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">Importance of Self-Management</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-purple-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📈</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Better Academic Performance</h3>
+                    <p class="text-gray-600">Students who manage themselves well tend to get better grades, complete assignments on time, and perform well in exams.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-blue-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🧘</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Reduced Stress & Anxiety</h3>
+                    <p class="text-gray-600">Good self-management helps you stay calm under pressure, handle challenges better, and maintain mental peace.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-green-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Improved Relationships</h3>
+                    <p class="text-gray-600">Managing emotions leads to better communication with friends, family, and teachers, building stronger bonds.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-yellow-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🏆</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Goal Achievement</h3>
+                    <p class="text-gray-600">Self-management skills help you set realistic goals and create actionable plans to achieve them step by step.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-red-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">💼</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Career Readiness</h3>
+                    <p class="text-gray-600">Employers value self-managed individuals. These skills prepare you for future success in any career path.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-indigo-100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Increased Productivity</h3>
+                    <p class="text-gray-600">Learn to do more in less time by eliminating distractions and focusing on what truly matters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stress Management -->
+    <section id="stress" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-purple-600 font-semibold text-sm uppercase tracking-wider">Stay Calm & Focused</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">Stress & Stress Management</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- What is Stress -->
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <span class="text-3xl">😰</span> What is Stress?
+                    </h3>
+                    <p class="text-gray-700 mb-6">
+                        Stress is your body's natural response to challenges or demands. It can be caused by exams, homework pressure, peer conflicts, or family expectations.
+                    </p>
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-gray-900">Common Signs of Stress:</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium">😓 Sweating</span>
+                            <span class="bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">😤 Irritability</span>
+                            <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium">😴 Sleep Issues</span>
+                            <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium">🤯 Headaches</span>
+                            <span class="bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">😟 Worry</span>
+                            <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium">🍔 Eating Changes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stress Management Techniques -->
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <span class="text-3xl">🌿</span> Stress Management Techniques
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 bg-white/70 p-4 rounded-xl">
+                            <span class="text-2xl">🧘‍♂️</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Deep Breathing</h4>
+                                <p class="text-gray-600 text-sm">Take slow, deep breaths to calm your nervous system</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 bg-white/70 p-4 rounded-xl">
+                            <span class="text-2xl">🏃</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Physical Exercise</h4>
+                                <p class="text-gray-600 text-sm">Regular activity releases endorphins and reduces stress</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 bg-white/70 p-4 rounded-xl">
+                            <span class="text-2xl">💬</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Talk to Someone</h4>
+                                <p class="text-gray-600 text-sm">Share your feelings with trusted friends or family</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 bg-white/70 p-4 rounded-xl">
+                            <span class="text-2xl">🎵</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Listen to Music</h4>
+                                <p class="text-gray-600 text-sm">Calming music can help relax your mind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time Management -->
+    <section id="time" class="py-20 bg-gradient-to-br from-indigo-900 to-purple-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-purple-300 font-semibold text-sm uppercase tracking-wider">Make Every Minute Count</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2 mb-4">Time Management</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-center card-hover border border-white/20">
+                    <div class="text-5xl mb-4">📋</div>
+                    <h3 class="text-xl font-bold mb-2">Plan Ahead</h3>
+                    <p class="text-purple-200">Create daily/weekly schedules and to-do lists</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-center card-hover border border-white/20">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-2">Prioritize Tasks</h3>
+                    <p class="text-purple-200">Focus on important tasks first using the priority matrix</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-center card-hover border border-white/20">
+                    <div class="text-5xl mb-4">📵</div>
+                    <h3 class="text-xl font-bold mb-2">Avoid Distractions</h3>
+                    <p class="text-purple-200">Put away phones during study time</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-center card-hover border border-white/20">
+                    <div class="text-5xl mb-4">⏱️</div>
+                    <h3 class="text-xl font-bold mb-2">Set Deadlines</h3>
+                    <p class="text-purple-200">Give yourself time limits for tasks</p>
+                </div>
+            </div>
+            
+            <!-- Time Management Matrix -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                <h3 class="text-2xl font-bold text-center mb-8">📊 The Eisenhower Matrix</h3>
+                <div class="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+                    <div class="bg-red-500/30 p-6 rounded-2xl border-2 border-red-400">
+                        <h4 class="font-bold text-lg mb-2">🔴 Urgent & Important</h4>
+                        <p class="text-sm text-red-100">Do it NOW! (Tomorrow's exam, project deadline today)</p>
+                    </div>
+                    <div class="bg-yellow-500/30 p-6 rounded-2xl border-2 border-yellow-400">
+                        <h4 class="font-bold text-lg mb-2">🟡 Important, Not Urgent</h4>
+                        <p class="text-sm text-yellow-100">Schedule it (Long-term projects, exercise, hobbies)</p>
+                    </div>
+                    <div class="bg-blue-500/30 p-6 rounded-2xl border-2 border-blue-400">
+                        <h4 class="font-bold text-lg mb-2">🔵 Urgent, Not Important</h4>
+                        <p class="text-sm text-blue-100">Delegate if possible (Some phone calls, minor requests)</p>
+                    </div>
+                    <div class="bg-gray-500/30 p-6 rounded-2xl border-2 border-gray-400">
+                        <h4 class="font-bold text-lg mb-2">⚪ Not Urgent or Important</h4>
+                        <p class="text-sm text-gray-200">Eliminate! (Excessive social media, time-wasters)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Self-Awareness -->
+    <section id="awareness" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-purple-600 font-semibold text-sm uppercase tracking-wider">Know Yourself</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">Self-Awareness</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="bg-gradient-to-r from-purple-100 to-indigo-100 p-8 rounded-3xl mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">🪞 What is Self-Awareness?</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Self-awareness is the ability to understand your own <strong>emotions, strengths, weaknesses, values, and motivations</strong>. It's like having a mirror that shows not just your face, but your true inner self.
+                        </p>
+                    </div>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-green-50 p-6 rounded-2xl border border-green-200">
+                            <h4 class="font-bold text-green-800 mb-3 flex items-center gap-2">
+                                <span>✅</span> Strengths to Recognize
+                            </h4>
+                            <ul class="text-gray-700 space-y-2 text-sm">
+                                <li>• What subjects do you excel in?</li>
+                                <li>• What skills come naturally to you?</li>
+                                <li>• What do others appreciate about you?</li>
+                                <li>• What makes you unique?</li>
+                            </ul>
+                        </div>
+                        <div class="bg-orange-50 p-6 rounded-2xl border border-orange-200">
+                            <h4 class="font-bold text-orange-800 mb-3 flex items-center gap-2">
+                                <span>🔧</span> Areas to Improve
+                            </h4>
+                            <ul class="text-gray-700 space-y-2 text-sm">
+                                <li>• What challenges do you face?</li>
+                                <li>• What triggers negative emotions?</li>
+                                <li>• What habits hold you back?</li>
+                                <li>• What skills need development?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-600 to-indigo-600 p-8 rounded-3xl text-white">
+                    <h3 class="text-xl font-bold mb-6">🔑 Ways to Build Self-Awareness</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center font-bold">1</span>
+                            <span>Keep a daily journal</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center font-bold">2</span>
+                            <span>Ask for feedback from others</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center font-bold">3</span>
+                            <span>Reflect on your actions</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center font-bold">4</span>
+                            <span>Practice mindfulness</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center font-bold">5</span>
+                            <span>Take personality assessments</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center font-bold">6</span>
+                            <span>Set personal goals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples for Students -->
+    <section id="examples" class="py-20 bg-gradient-to-br from-yellow-50 to-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-orange-600 font-semibold text-sm uppercase tracking-wider">Real-Life Scenarios</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">Examples for Students</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-yellow-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Example 1 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl">📚</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Time Management</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Exam Preparation</h3>
+                    <p class="text-gray-600 text-sm mb-4">Rahul creates a study timetable 2 weeks before exams, dividing subjects daily instead of cramming the night before.</p>
+                    <div class="bg-green-50 p-3 rounded-xl">
+                        <p class="text-green-700 text-sm"><strong>Result:</strong> Better understanding & less stress!</p>
+                    </div>
+                </div>
+                
+                <!-- Example 2 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl">😤</span>
+                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Stress Management</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Handling Conflicts</h3>
+                    <p class="text-gray-600 text-sm mb-4">When Priya gets angry at a friend, she takes 10 deep breaths and waits before responding, instead of saying hurtful things.</p>
+                    <div class="bg-green-50 p-3 rounded-xl">
+                        <p class="text-green-700 text-sm"><strong>Result:</strong> Friendship saved!</p>
+                    </div>
+                </div>
+                
+                <!-- Example 3 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl">🪞</span>
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">Self-Awareness</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Knowing Weaknesses</h3>
+                    <p class="text-gray-600 text-sm mb-4">Arjun realizes he struggles with Math. Instead of ignoring it, he asks his teacher for extra help and practices daily.</p>
+                    <div class="bg-green-50 p-3 rounded-xl">
+                        <p class="text-green-700 text-sm"><strong>Result:</strong> Math grades improved!</p>
+                    </div>
+                </div>
+                
+                <!-- Example 4 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl">📱</span>
+                        <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">Self-Discipline</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Social Media Control</h3>
+                    <p class="text-gray-600 text-sm mb-4">Sneha sets a 30-minute daily limit on Instagram and uses app timers to stay focused on studies.</p>
+                    <div class="bg-green-50 p-3 rounded-xl">
+                        <p class="text-green-700 text-sm"><strong>Result:</strong> More productive days!</p>
+                    </div>
+                </div>
+                
+                <!-- Example 5 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl">🎯</span>
+                        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">Goal Setting</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Breaking Big Goals</h3>
+                    <p class="text-gray-600 text-sm mb-4">Kavya wants to read 12 books this year. She breaks it into 1 book per month and tracks her progress.</p>
+                    <div class="bg-green-50 p-3 rounded-xl">
+                        <p class="text-green-700 text-sm"><strong>Result:</strong> Goal achieved!</p>
+                    </div>
+                </div>
+                
+                <!-- Example 6 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl">🧘</span>
+                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm font-medium">Mindfulness</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Morning Routine</h3>
+                    <p class="text-gray-600 text-sm mb-4">Vikram starts each day with 5 minutes of meditation and positive affirmations before school.</p>
+                    <div class="bg-green-50 p-3 rounded-xl">
+                        <p class="text-green-700 text-sm"><strong>Result:</strong> Better focus all day!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="py-20 bg-gradient-to-br from-purple-600 to-indigo-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-purple-200 font-semibold text-sm uppercase tracking-wider">Test Your Knowledge</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2 mb-4">Quick Quiz 🧠</h2>
+                <p class="text-purple-200">Answer these questions to check your understanding!</p>
+            </div>
+            
+            <div class="bg-white rounded-3xl p-8 shadow-2xl">
+                <div id="quiz-container">
+                    <!-- Question 1 -->
+                    <div class="quiz-question mb-8 pb-8 border-b border-gray-200">
+                        <p class="text-lg font-bold text-gray-900 mb-4">1. What is self-management?</p>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q1" class="w-5 h-5 text-purple-600">
+                                <span>Managing other people</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q1" class="w-5 h-5 text-purple-600">
+                                <span>Regulating your own emotions, thoughts, and behaviors</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q1" class="w-5 h-5 text-purple-600">
+                                <span>Only managing your time</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 2 -->
+                    <div class="quiz-question mb-8 pb-8 border-b border-gray-200">
+                        <p class="text-lg font-bold text-gray-900 mb-4">2. Which is NOT a stress management technique?</p>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q2" class="w-5 h-5 text-purple-600">
+                                <span>Deep breathing</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q2" class="w-5 h-5 text-purple-600">
+                                <span>Ignoring the problem</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q2" class="w-5 h-5 text-purple-600">
+                                <span>Physical exercise</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 3 -->
+                    <div class="quiz-question mb-8 pb-8 border-b border-gray-200">
+                        <p class="text-lg font-bold text-gray-900 mb-4">3. In the Eisenhower Matrix, what should you do with urgent AND important tasks?</p>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q3" class="w-5 h-5 text-purple-600">
+                                <span>Eliminate them</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q3" class="w-5 h-5 text-purple-600">
+                                <span>Schedule for later</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q3" class="w-5 h-5 text-purple-600">
+                                <span>Do them immediately</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 4 -->
+                    <div class="quiz-question mb-8 pb-8 border-b border-gray-200">
+                        <p class="text-lg font-bold text-gray-900 mb-4">4. Self-awareness helps you understand your:</p>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q4" class="w-5 h-5 text-purple-600">
+                                <span>Only strengths</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q4" class="w-5 h-5 text-purple-600">
+                                <span>Strengths, weaknesses, emotions, and values</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q4" class="w-5 h-5 text-purple-600">
+                                <span>Other people's behavior</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 5 -->
+                    <div class="quiz-question mb-8">
+                        <p class="text-lg font-bold text-gray-900 mb-4">5. Good self-management leads to:</p>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q5" class="w-5 h-5 text-purple-600">
+                                <span>More stress and confusion</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q5" class="w-5 h-5 text-purple-600">
+                                <span>Better grades, less stress, and improved relationships</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 cursor-pointer hover:border-purple-400 transition quiz-option">
+                                <input type="radio" name="q5" class="w-5 h-5 text-purple-600">
+                                <span>No change in life</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="checkQuiz()" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-xl font-bold text-lg hover:from-purple-700 hover:to-indigo-700 transition shadow-lg">
+                    Check My Answers ✨
+                </button>
+                
+                <div id="quiz-result" class="hidden mt-6 p-6 rounded-xl text-center"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-2xl">📚</span>
+                        <span class="font-bold text-xl">Class 9 IT</span>
+                    </div>
+                    <p class="text-gray-400">Self Management Skills - An essential chapter for personal growth and academic success.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#meaning" class="hover:text-white transition">Meaning</a></li>
+                        <li><a href="#importance" class="hover:text-white transition">Importance</a></li>
+                        <li><a href="#stress" class="hover:text-white transition">Stress Management</a></li>
+                        <li><a href="#time" class="hover:text-white transition">Time Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Key Takeaways</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>✅ Know yourself</li>
+                        <li>✅ Manage your time wisely</li>
+                        <li>✅ Control your stress</li>
+                        <li>✅ Set and achieve goals</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>Made with ❤️ for Class 9 Students | Self Management Skills</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Quiz option selection visual feedback
+        document.querySelectorAll('.quiz-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const parent = this.closest('.quiz-question');
+                parent.querySelectorAll('.quiz-option').forEach(opt => {
+                    opt.classList.remove('border-purple-500', 'bg-purple-50');
+                    opt.classList.add('border-gray-200');
+                });
+                this.classList.remove('border-gray-200');
+                this.classList.add('border-purple-500', 'bg-purple-50');
+            });
+        });
+
+        // Check quiz answers
+        function checkQuiz() {
+            const answers = {
+                q1: 1, // Second option (index 1)
+                q2: 1, // Second option
+                q3: 2, // Third option
+                q4: 1, // Second option
+                q5: 1  // Second option
+            };
+            
+            let score = 0;
+            
+            for (let q in answers) {
+                const selected = document.querySelector(`input[name="${q}"]:checked`);
+                if (selected) {
+                    const options = document.querySelectorAll(`input[name="${q}"]`);
+                    const selectedIndex = Array.from(options).indexOf(selected);
+                    if (selectedIndex === answers[q]) {
+                        score++;
+                    }
+                }
+            }
+            
+            const resultDiv = document.getElementById('quiz-result');
+            resultDiv.classList.remove('hidden');
+            
+            if (score === 5) {
+                resultDiv.className = 'mt-6 p-6 rounded-xl text-center bg-green-100 border-2 border-green-500';
+                resultDiv.innerHTML = `<p class="text-2xl font-bold text-green-700">🎉 Perfect Score! ${score}/5</p><p class="text-green-600 mt-2">Excellent! You've mastered Self-Management Skills!</p>`;
+            } else if (score >= 3) {
+                resultDiv.className = 'mt-6 p-6 rounded-xl text-center bg-yellow-100 border-2 border-yellow-500';
+                resultDiv.innerHTML = `<p class="text-2xl font-bold text-yellow-700">👍 Good Job! ${score}/5</p><p class="text-yellow-600 mt-2">You're on the right track! Review the sections you missed.</p>`;
+            } else {
+                resultDiv.className = 'mt-6 p-6 rounded-xl text-center bg-red-100 border-2 border-red-500';
+                resultDiv.innerHTML = `<p class="text-2xl font-bold text-red-700">📚 Keep Learning! ${score}/5</p><p class="text-red-600 mt-2">Go through the content again and try the quiz once more!</p>`;
+            }
+        }
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
